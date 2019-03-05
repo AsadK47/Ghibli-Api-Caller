@@ -1,0 +1,43 @@
+{
+  "name": "ghibli-api-caller",
+  "version": "1.0.0",
+  "description": "A simple app to demonstrate calls to API's using studio Ghibli's API.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsadK47/Ghibli-Api-Caller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsadK47/Ghibli-Api-Caller/issues"
+  },
+  "homepage": "https://github.com/AsadK47/Ghibli-Api-Caller#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^3.3.1",
+    "sinon": "^7.2.3"
+  },
+  "test": "istanbul cover --include-all-sources jasmine && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+  "coverage": "istanbul cover --include-all-sources jasmine",
+  "lint": "npx eslint src;exit 0",
+  "jasmine": "jasmine",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.3.0",
+    "node-fetch-polyfill": "^2.0.6"
+  }
+}
